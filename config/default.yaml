@@ -1,0 +1,12 @@
+service: actuator
+srvaddr: :5100
+metricsaddr: :5101
+healthaddr: :5102
+data:
+  type: sqlite
+  sqlite:
+    memory: true
+stream:
+  type: mpub
+  memory:
+    topic: test
